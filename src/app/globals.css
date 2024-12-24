@@ -4,6 +4,10 @@
 
 @layer base {
   body {
-    @apply font-primary;
+    @apply font-primary bg-background text-foreground;
   }
+}
+
+.main {
+  padding: 0 15px;
 }
