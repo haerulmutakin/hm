@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+  	fontFamily: {
+  		primary: 'var(--font-fira-code)'
+  	}
   },
   plugins: [],
 } satisfies Config;
