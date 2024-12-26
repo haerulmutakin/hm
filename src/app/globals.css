@@ -6,8 +6,20 @@
   body {
     @apply font-primary bg-background text-foreground;
   }
+  .main {
+    padding: 0 15px;
+  }
+
+  .h1 {
+    @apply leading-[1.1] text-primary text-[40px] md:text-[58px] font-semibold
+  }
+
+  .h2 {
+    @apply leading-[1.1] text-[32px] md:text-[40px] font-semibold
+  }
+
+  .page-title {
+    @apply text-[24px] font-medium mb-3 mt-2 md:mt-4
+  }
 }
 
-.main {
-  padding: 0 15px;
-}
