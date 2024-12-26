@@ -10,9 +10,9 @@ const Header = () => {
   const pathname = usePathname()
   return (
     <header>
-      <div className="py-3 flex justify-between items-center">
+      <div className="py-1 md:py-4 flex justify-between items-center">
         <Link href='/'>
-          <h1 className="font-bold text-4xl">HM</h1>
+          <h1 className="font-bold text-3xl md:text-4xl">HM</h1>
         </Link>
         <div className="hidden md:flex gap-6 items-center">
           {menusConstant.map((menu, index) => (
@@ -25,10 +25,10 @@ const Header = () => {
         </div>
         <div className="hidden md:flex">
           <Link href='/resume'>
-            <AppButton label='Contact Me' />
+            <AppButton label="Contact Me" />
           </Link>
         </div>
-        <RxHamburgerMenu size={24} className="md:hidden" />
+        <RxHamburgerMenu size={22} className="md:hidden" />
       </div>
     </header>
   )

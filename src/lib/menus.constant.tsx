@@ -12,7 +12,7 @@ export default [
     path: '/work'
   },
   {
-    label: 'Skills',
-    path: '/skills'
+    label: 'Skill',
+    path: '/skill'
   },
 ]
