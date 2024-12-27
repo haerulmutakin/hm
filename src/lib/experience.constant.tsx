@@ -25,7 +25,7 @@ export default [
   },
   {
     time: 'Jun 2017 - Jan 2021',
-    role: 'Frontend Developer',
+    role: 'Frontend Developer & Mentor',
     type: 'Full time',
     company: 'Badan Sistem Informasi UII',
     place: 'Yogyakarta',
