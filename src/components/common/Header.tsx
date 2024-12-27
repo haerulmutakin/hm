@@ -8,6 +8,7 @@ import { RxHamburgerMenu } from "react-icons/rx"
 
 const Header = () => {
   const pathname = usePathname()
+  const menus = menusConstant
   return (
     <header>
       <div className="py-1 md:py-4 flex justify-between items-center">
@@ -15,11 +16,11 @@ const Header = () => {
           <h1 className="font-bold text-3xl md:text-4xl">HM</h1>
         </Link>
         <div className="hidden md:flex gap-6 items-center">
-          {menusConstant.map((menu, index) => (
+          {menus.map((menu, index) => (
             <Link
               href={menu.path}
               key={index}
-              className={`${pathname === menu.path && 'border-b-2 border-primary text-primary'}`}
+              className={`${pathname === menu.path && 'border-primary text-primary'}`}
             >{menu.label}</Link>
           ))}
         </div>
