@@ -2,9 +2,27 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import menus from "@/lib/menus.constant"
 import AppButton from "../ui/button/AppButton"
 import { RxHamburgerMenu } from "react-icons/rx"
+
+const menus =  [
+  {
+    label: 'Home',
+    path: '/'
+  },
+  {
+    label: 'Experience',
+    path: '/experience'
+  },
+  {
+    label: 'Work',
+    path: '/work'
+  },
+  {
+    label: 'Skill',
+    path: '/skill'
+  },
+]
 
 const Header = () => {
   const pathname = usePathname()
