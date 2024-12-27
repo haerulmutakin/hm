@@ -1,4 +1,4 @@
-export default [
+const experience =  [
   {
     time: 'Jul 2021 - Present',
     role: 'Senior Frontend Developer',
@@ -32,3 +32,5 @@ export default [
     website: 'https://www.linkedin.com/company/bsiuii/'
   }
 ]
+
+export default experience

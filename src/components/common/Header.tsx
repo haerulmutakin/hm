@@ -2,13 +2,12 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import menusConstant from "@/lib/menus.constant"
+import menus from "@/lib/menus.constant"
 import AppButton from "../ui/button/AppButton"
 import { RxHamburgerMenu } from "react-icons/rx"
 
 const Header = () => {
   const pathname = usePathname()
-  const menus = menusConstant
   return (
     <header>
       <div className="py-1 md:py-4 flex justify-between items-center">

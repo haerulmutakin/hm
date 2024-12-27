@@ -1,13 +1,12 @@
 import ExperienceCard from "@/components/ExperienceCard"
-import experienceConstant from "@/lib/experience.constant"
+import experience from "@/lib/experience.constant"
 
 const Experience = () => {
-  const experiences = experienceConstant
   return (
     <main>
       <h1 className="page-title">Experience</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {experiences.map((ex, index) => (
+        {experience.map((ex, index) => (
           <ExperienceCard key={index} item={ex} />
         ))}
       </div>

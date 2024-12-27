@@ -1,4 +1,4 @@
-export default [
+const menus =  [
   {
     label: 'Home',
     path: '/'
@@ -16,3 +16,5 @@ export default [
     path: '/skill'
   },
 ]
+
+export default menus
