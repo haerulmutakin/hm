@@ -2,7 +2,16 @@ import Link from "next/link"
 import { GoArrowUpRight } from "react-icons/go"
 import { PiDotOutline } from "react-icons/pi"
 
-const ExperienceCard = ({item}: {item: any}) => {
+type Experience = {
+  time: string,
+  role: string,
+  type: string,
+  company: string,
+  place: string,
+  website: string
+}
+
+const ExperienceCard = ({item}: {item: Experience}) => {
   return (
     <div className="bg-[#363636] py-3 px-2 rounded-md">
       <div className="flex items-center text-gray-300 justify-between">
